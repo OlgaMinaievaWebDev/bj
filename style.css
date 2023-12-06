@@ -39,3 +39,8 @@ body {
   position: relative;
   top: 1px;
 }
+
+
+.game {
+ display: none;
+}
