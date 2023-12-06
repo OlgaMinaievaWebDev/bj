@@ -1,0 +1,2 @@
+# bj
+BlackJack simple app
