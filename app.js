@@ -1,33 +1,31 @@
-const startGameEl = document.getElementById("startGame");
+const dealerSumEl = document.getElementById("dealerSum");
+const gameStartEl = document.getElementById("game");
+const startGameBtn = document.getElementById("startGame");
+const introEl = document.getElementById("intro");
 
-startGameEl.addEventListener('click', function () {
- console.log('clicked');
-})
+let cards = [
+  "Ace",
+  "2",
+  "3",
+  "4",
+  "5",
+  "6",
+  "7",
+  "8",
+  "9",
+  "10",
+  "J",
+  "Q",
+  "K",
+];
 
-function buildDeck() {
-  let values = [
-    "Ace",
-    "2",
-    "3",
-    "4",
-    "5",
-    "6",
-    "7",
-    "8",
-    "9",
-    "10",
-    "J",
-    "Q",
-    "K",
-  ];
-  let types = ["♥️", "♠️", "♦️", "♣️"];
- let deck = [];
+startGameBtn.addEventListener("click", function () {
+  introEl.style.display = "none";
+  gameStartEl.style.display = "block";
+});
 
-  for (let i = 0; i < types.length; i++) {
-   for (let j = 0; j < values.length; j++) {
-    deck.push(values[j] + " " + types[i]);
-    console.log(deck);
-    }
-  }
+function renderGame() {}
+
+function getRandomCard() {
+  return Math.floor(Math.random() * cards.length);
 }
-

@@ -10,9 +10,7 @@ body {
   text-align: center;
   height: 100vh;
   width: 100vw;
-  background: url(./resource/blackjack-table-top.jpeg);
-  background-size: cover;
-  background-position: top;
+  background: linear-gradient(to bottom, #477124 5%, #a8c293 100%);
 }
 
 .btn {
@@ -31,6 +29,7 @@ body {
   text-decoration: none;
   text-shadow: 0px 1px 0px #aade7c;
 }
+
 .btn:hover {
   background: linear-gradient(to bottom, #5cb811 5%, #77d42a 100%);
   background-color: #5cb811;
@@ -40,7 +39,6 @@ body {
   top: 1px;
 }
 
-
 .game {
- display: none;
+  display: none;
 }
